@@ -258,14 +258,13 @@ nav ul li a:hover::after{
 
 .work-list:hover .subtitle{
     height:100%;
-}
-/*Back to top button*/
+}        
 /*Back to the top button*/
 html {
     scroll-behavior: smooth;
     }
     
-    .back-to-top {
+.back-to-top {
     position: fixed;
     bottom: 2rem;
     right: 1rem;
@@ -279,15 +278,16 @@ html {
     transition: 0.2s ease-out;
     }
     
-    .back-to-top span {
+.back-to-top span {
     color: #fff;
     font-size: 3rem;
     transition: 0.2s ease-out;
     }
     
-    .back-to-top:hover {
+.back-to-top:hover {
     background-color: #ff004f;
     }
-    .back-to-top:hover span {
+    
+.back-to-top:hover span {
     transform: translateY(-4px);
     }

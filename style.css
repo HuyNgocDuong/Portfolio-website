@@ -128,7 +128,7 @@ nav ul li a:hover::after{
 }
 
 .btn{
-    display:block;
+    display: inline-block;
     margin: 50px 5px;
     width: fit-content;
     border: 1px solid #ff004f;
@@ -291,3 +291,39 @@ html {
 .back-to-top:hover span {
     transform: translateY(-4px);
     }
+/*Contact*/
+.contact-left{
+    flex-basis:35%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contact-right{
+    flex-basis:60%;
+}
+
+.social-icon{
+    margin-top:30px;
+}
+
+.social-icon a{
+    text-decoration: none; /*remove the underline of hyperlink*/
+    font-size:30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+}

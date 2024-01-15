@@ -327,3 +327,53 @@ html {
     color:#ff004f;
     transform: translateY(-5px);
 }
+
+.submit {
+    background-color: #000000;
+    color: #eedfc7;
+    border: 3px solid #eedfc7;
+    margin: 4px 2px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    font-family: var(--font_content);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #ff004f;
+    text-shadow: #7c5802;
+    transform: scale(1.05);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626; 
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff; /*Text color*/
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+/*Responsive design for small screens*/

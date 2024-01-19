@@ -14,20 +14,21 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/91681cdb16.js" crossorigin="anonymous"></script>
-        </head>
         <body>
             <!------------Heading------------------>
             <div id="header">
                 <div class="container"> 
                     <nav>
                         <img src="icons/icon.png" class="logo">
-                        <ul>
+                        <ul id="sidemenu">
                             <li><a href="#">Heading</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Skills</a></li>
                             <li><a href="#">Experiences</a></li>
                             <li><a href="#">Contact Info</a></li>
+                            <i class="fas fa-xmark" onclick="menuclose()"></i>
                         </ul>
+                        <i class="fas fa-bars " onclick="openmenu()"></i>
                     </nav>
                     <div class="header-text">
                         <p>Master Degree</p>
@@ -140,6 +141,18 @@
             <a href="#" class="back-to-top">
                 <span class="material-icons">arrow_upward</span>
             </a>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+            
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+            
+                function menuclose() {
+                    sidemenu.style.right = "-200px"; // Set the correct value for closing the menu
+                }
+            </script>
+            
         </body>
 </html>
 

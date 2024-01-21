@@ -377,12 +377,12 @@ form input, form textarea{
     color: #ff004f;
 }
 /*Responsive nav bar*/
-nav .fas{
+nav .fa-solid{
     display: block;
     font-size: 25px;
 }
 
-nav ul .fas{
+nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -403,7 +403,7 @@ nav ul li{
     display: block;
     margin: 25px;
 }
-nav ul .fas{
+nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -411,24 +411,25 @@ nav ul .fas{
 }
 
 /*Responsive design for small screens*/
-@media only screen and(max-width: 600px){
-    #header{
+@media only screen and (max-width: 600px) {
+    /* Your responsive styles for small screens go here */
+    #header {
         background-image: url(images/banner-image.jpg);
     }
-    .header-text{
+    .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
+    .header-text h1 {
         font-size: 30px;
     }
-    nav ul .fas{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    nav ul{
+    nav ul {
         background: #000000;
         position: fixed;
         top: 0;
@@ -439,15 +440,14 @@ nav ul .fas{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    
 }

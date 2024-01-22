@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 body,header,footer,aside,main,nav,section {
     font-family: "Open Sans", sans-serif;
@@ -116,6 +118,7 @@ nav ul li a:hover::after{
 .about-1 img{
     width:100%;
     border-radius: 15px;
+    flex-basis:100%;
 }
 
 .about-2{
@@ -293,7 +296,7 @@ html {
     }
 /*Contact*/
 .contact-left{
-    flex-basis:35%;
+    flex-basis:100%;
 }
 
 .contact-left p{
@@ -307,7 +310,7 @@ html {
 }
 
 .contact-right{
-    flex-basis:60%;
+    flex-basis:1000%;
 }
 
 .social-icon{
@@ -377,12 +380,12 @@ form input, form textarea{
     color: #ff004f;
 }
 /*Responsive nav bar*/
-nav .fas{
+nav .fa-solid{
     display: block;
     font-size: 25px;
 }
 
-nav ul .fas{
+nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -403,7 +406,7 @@ nav ul li{
     display: block;
     margin: 25px;
 }
-nav ul .fas{
+nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -422,7 +425,11 @@ nav ul .fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav ul .fas{
+    nav .fa-solid{
+        display:block;
+        font-size:25px;
+    }
+    nav ul .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
@@ -443,12 +450,26 @@ nav ul .fas{
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    
+    text{
+        font-size: 35px;
+    }
+    .about-1, .about-2{
+        flex-basis: 100%;
+    }
+    .about-1{
+        margin-bottom: 30px;
+    }
+    .contact-left, .contact-right{
+    flex-basis: 100%;
+    }
+    .copyright{
+        font-size:14px;
+    }
 }
 

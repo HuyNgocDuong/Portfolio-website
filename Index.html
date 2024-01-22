@@ -21,11 +21,10 @@
                     <nav>
                         <img src="icons/icon.png" class="logo">
                         <ul id="sidemenu">
-                            <li><a href="#">Heading</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Experiences</a></li>
-                            <li><a href="#">Contact Info</a></li> 
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skill">Skills</a></li>
+                            <li><a href="#experiences">Experiences</a></li>
+                            <li><a href="#contact">Contact Info</a></li> 
                             <i class="fa-solid fa-xmark" onclick="menuclose()"></i>
                         </ul>
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -125,7 +124,7 @@
                             </div>
                         </div>
                         <div class="contact-right"> <!--Tao form de nguoi dung add info vao-->
-                            <form>
+                            <form name="submit-to-google-sheet">
                                 <input type="text" name="Name" placeholder="Your Name" required>
                                 <input type="email" name="Email" placeholder="Your Email" required>
                                 <textarea name="Message" row="6" placeholder="Your Message"></textarea>
@@ -153,6 +152,17 @@
                 }
             </script>
             
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzg4uYwZ44X_6BOw8iHRM_iAEMNQgW9JSsheQfcrvoZ-U4k0xwhFWmOcEm1B7mvNkbT/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
         </body>
 </html>
 

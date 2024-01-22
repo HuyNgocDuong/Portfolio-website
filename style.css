@@ -296,7 +296,7 @@ html {
     }
 /*Contact*/
 .contact-left{
-    flex-basis:100%;
+    flex-basis:35%;
 }
 
 .contact-left p{
@@ -310,7 +310,7 @@ html {
 }
 
 .contact-right{
-    flex-basis:1000%;
+    flex-basis:65%;
 }
 
 .social-icon{
@@ -352,7 +352,7 @@ html {
 }
 
 .contact-right form{
-    width: 100%;
+    width: 65%;
 }
 
 form input, form textarea{
@@ -392,7 +392,7 @@ nav ul .fa-solid{
     cursor: pointer;
 }
 nav ul{
-    background: #000000;
+    background: #ff004f;
     position: fixed;
     top: 0;
     right: -200px;
@@ -414,7 +414,7 @@ nav ul .fa-solid{
 }
 
 /*Responsive design for small screens*/
-@media only screen and(max-width: 600px){
+@media only screen and(max-width: 700px){
     #header{
         background-image: url(images/banner-image.jpg);
     }

@@ -472,4 +472,9 @@ nav ul .fa-solid{
         font-size:14px;
     }
 }
-
+#msg{
+    color:#ff004f;
+    margin-bottom: 20px;
+    display:block;
+    font-size: 25px;
+}

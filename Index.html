@@ -130,6 +130,7 @@
                                 <textarea name="Message" row="6" placeholder="Your Message"></textarea>
                                 <button type="submit" class=" submit">Submit</button>
                             </form>
+                            <span id="msg"></span>
                         </div>
                     </div>
                 </div>
@@ -140,6 +141,7 @@
             <a href="#" class="back-to-top">
                 <span class="material-icons">arrow_upward</span>
             </a>
+            <!--Mở menu từ bên phải-->
             <script>
                 var sidemenu = document.getElementById("sidemenu");
             
@@ -151,17 +153,21 @@
                     sidemenu.style.right = "-200px"; 
                 }
             </script>
-            
+            <!--Js dùng để khi nhập thông tin từ form sẽ lưu thông tin vào google sheet-->
             <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwAqEX-prejT6qA5fL62KfcT8io95h5KAiZ4uay8GeHHlz7f05_DlkE9bljLE71pvDdcw/exec'
-
-            const form = document.forms['submit-to-google-sheetS']
-
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
             form.addEventListener('submit', e => {
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thank you! your form is submitted successfully." ))
-                .then(() => { window.location.reload(); })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!!!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
                 .catch(error => console.error('Error!', error.message))
             })
 

@@ -395,12 +395,12 @@ nav ul{
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
+    left: -200px;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
-    transition: right 0.5s;
+    transition: left 0.5s;
 }
 nav ul li{
     display: block;

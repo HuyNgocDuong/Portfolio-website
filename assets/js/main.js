@@ -33,7 +33,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["Designer","Youtuber","Developer"],
+  strings : ["Software Developer", "Web Developer", "Tech Enthusiast", "Lifelong Learner"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
@@ -76,6 +76,9 @@ reset: true
 
 srLeft.reveal('.about-info',{delay: 100})
 srLeft.reveal('.contact-info',{delay: 100})
+
+// Timeline animation
+srLeft.reveal('.timeline-item',{delay: 100, interval: 200})
 
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
